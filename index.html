@@ -7,62 +7,51 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="layout">
+<div class="wrap">
 
-  <aside class="sidebar">
-    <div class="name">Cari</div>
-    <div class="tagline">Product manager, baker, and content maker</div>
-    <nav>
-      <a href="index.html" class="active">Home</a>
-      <a href="resume.html">Resume</a>
-      <a href="bakery.html">Roll Call</a>
-      <a href="ugc.html">Content</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <div class="contact-line">
-      <a href="mailto:your@email.com">your@email.com</a>
-      <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-      <a href="https://instagram.com/eatrollcall" target="_blank">@eatrollcall</a>
-    </div>
-  </aside>
+  <div class="mark">
+    <div class="name">Cari Perez</div>
+    <div class="tagline">product manager &middot; baker &middot; creator</div>
+  </div>
 
-  <main>
-    <div class="hero-row">
-      <img src="images/profile.jpg" alt="Cari">
-      <div>
-        <div class="chapter-label">Hi, I'm Cari</div>
-        <h1>Product manager by trade, baker by weekend, and building a content presence in between.</h1>
-        <p>I spent the last few years shipping hardware and firmware at Microsoft, on the team behind Xbox Accessories. Outside of that, I bake, mostly cinnamon rolls, and I'm building Roll Call, a small pop-up out of the Tampa Bay area. This site is where those pieces live in one place.</p>
-      </div>
-    </div>
+  <nav class="topnav">
+    <a href="index.html" class="active">home</a>
+    <a href="resume.html">resume</a>
+    <a href="bakery.html">roll call</a>
+    <a href="ugc.html">content</a>
+    <a href="contact.html">contact</a>
+  </nav>
 
-    <hr class="divider">
+  <div class="hero-block">
+    <img src="images/profile.jpg" alt="Cari">
+    <h1>hi, I'm Cari</h1>
+    <p>Product manager by trade, baker by weekend, and building a content presence in between. I spent the last few years shipping hardware and firmware at Microsoft, on the team behind Xbox Accessories. Outside of that, I bake, mostly cinnamon rolls, and I'm building Roll Call, a small pop-up out of the Tampa Bay area. This site is where those pieces live in one place.</p>
+  </div>
 
-    <div class="grid-2">
-      <div class="panel">
-        <div class="chapter-label" style="color:var(--resume)">Resume</div>
-        <h3>Product management work</h3>
-        <p>Hardware accessories, firmware, cross-platform connectivity, and OEM partnerships at Microsoft.</p>
-        <a class="btn" href="resume.html">View resume</a>
-      </div>
-      <div class="panel">
-        <div class="chapter-label" style="color:var(--bakery)">Roll Call</div>
-        <h3>Cinnamon rolls, Tampa Bay</h3>
-        <p>Cream cheese icing, small batches, pickups and pop-ups around Riverview and the greater Tampa area.</p>
-        <a class="btn" href="bakery.html">See Roll Call</a>
-      </div>
-    </div>
+  <hr class="divider">
 
-    <div class="panel" style="margin-top:0">
-      <div class="chapter-label" style="color:var(--content)">Content</div>
-      <h3>Cooking and baking, on camera</h3>
-      <p>The process behind the rolls and the recipes I'm testing, documented as I go rather than staged after the fact.</p>
-      <a class="btn" href="ugc.html">See the content</a>
-    </div>
+  <div class="panel center">
+    <div class="chapter-label" style="color:var(--resume)">resume</div>
+    <h3>product management work</h3>
+    <p>Hardware accessories, firmware, cross-platform connectivity, and OEM partnerships at Microsoft.</p>
+    <div class="cta-row"><a class="btn" href="resume.html">view resume</a></div>
+  </div>
 
-    <footer class="note">Based in the Tampa Bay area, Florida.</footer>
-  </main>
+  <div class="panel center">
+    <div class="chapter-label" style="color:var(--bakery)">roll call</div>
+    <h3>cinnamon rolls, Tampa Bay</h3>
+    <p>Cream cheese icing, small batches, pickups and pop-ups around Riverview and the greater Tampa area.</p>
+    <div class="cta-row"><a class="btn" href="bakery.html">see roll call</a></div>
+  </div>
 
+  <div class="panel center">
+    <div class="chapter-label" style="color:var(--content)">content</div>
+    <h3>cooking and baking, on camera</h3>
+    <p>The process behind the rolls and the recipes I'm testing, documented as I go rather than staged after the fact.</p>
+    <div class="cta-row"><a class="btn" href="ugc.html">see the content</a></div>
+  </div>
+
+  <footer class="note">based in the Tampa Bay area, Florida</footer>
 </div>
 </body>
 </html>
