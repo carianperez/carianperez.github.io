@@ -1,0 +1,15 @@
+Add these image files to this folder, matching these exact names, and the site will pick them up automatically:
+
+profile.jpg        -> your photo, used on the Home page
+bakery-1.jpg        -> Roll Call photo
+bakery-2.jpg        -> Roll Call photo
+bakery-3.jpg        -> Roll Call photo
+bakery-4.jpg        -> Roll Call photo
+content-1.jpg        -> content still
+content-2.jpg        -> content still
+content-3.jpg        -> content still
+content-4.jpg        -> content still
+
+Optional: add a resume.pdf file in the main folder (next to index.html) to make the "Download PDF" link on the Resume page work.
+
+Delete this text file once you've added your images.
