@@ -3,58 +3,90 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cari — Home</title>
+<title>Carian Perez</title>
+<meta name="description" content="Carian Perez is a product manager, baker, and content creator in Tampa, FL. Resume, Roll Call cinnamon rolls, and media kit.">
+<meta property="og:title" content="Carian Perez">
+<meta property="og:description" content="Carian Perez is a product manager, baker, and content creator in Tampa, FL. Resume, Roll Call cinnamon rolls, and media kit.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://carianperez.github.io/images/profile.jpg">
+<meta name="theme-color" content="#F6EBE7">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23F6EBE7'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' text-anchor='middle' fill='%237C5568'%3ECP%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="theme-kit">
+<a class="skip" href="#main">Skip to content</a>
 <div class="wrap">
 
-  <div class="mark">
-    <div class="name">Carian Perez</div>
+  <header class="mark">
+    <a class="name" href="index.html">Carian Perez</a>
     <div class="tagline">product manager &middot; baker &middot; creator</div>
-  </div>
+  </header>
 
-  <nav class="topnav">
-    <a href="index.html" class="active">home</a>
+  <nav class="topnav" aria-label="Main">
+    <a href="index.html" aria-current="page">home</a>
     <a href="resume.html">resume</a>
     <a href="bakery.html">roll call</a>
     <a href="ugc.html">content</a>
+    <a href="mediakit.html">media kit</a>
     <a href="contact.html">contact</a>
   </nav>
-<div class="hero-flex">
-  <div class="hero-text">
-    <h1>hi, I'm Cari</h1>
-    <p>Product manager by trade, baker by weekend, and building a content presence in between. I spent the last few years shipping hardware and firmware at Microsoft, on the team behind Xbox Accessories. Outside of that, I bake, mostly cinnamon rolls, and I'm building Roll Call, a small pop-up out of the Tampa Bay area. This site is where those pieces live in one place.</p>
-  </div>
-  <div class="hero-photo">
-    <img src="images/profile.jpg" alt="Cari">
-  </div>
+
+  <main id="main">
+    <section class="hero-flex">
+      <div class="hero-text">
+        <h1>hi, I&rsquo;m Cari</h1>
+        <p>I&rsquo;m a product manager who started at Microsoft as an intern and went on to ship firmware and platform work on Xbox. Now I&rsquo;m based in Tampa, where I run Roll Call, a small cinnamon roll bakery, and make food content about it.</p>
+        <p>This site is where all three live in one place.</p>
+        <div class="cta-row left">
+          <a class="btn filled" href="https://roll-call-bakery.square.site/" target="_blank" rel="noopener">order rolls</a>
+          <a class="btn" href="resume.html">view resume</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="images/profile.jpg" alt="Portrait of Cari" width="280" height="340">
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <section class="tiles" aria-label="Explore">
+      <a class="tile" href="resume.html" style="--tile-accent:var(--resume)">
+        <div class="eyebrow">resume</div>
+        <h3>product management</h3>
+        <p>Firmware, platform, and hardware partner work on Xbox at Microsoft.</p>
+      </a>
+      <a class="tile" href="bakery.html" style="--tile-accent:var(--bakery)">
+        <div class="eyebrow">roll call</div>
+        <h3>cinnamon rolls</h3>
+        <p>Brown butter cinnamon rolls baked in Riverview. Order online for Saturday pickup.</p>
+      </a>
+      <a class="tile" href="ugc.html" style="--tile-accent:var(--content)">
+        <div class="eyebrow">content</div>
+        <h3>food content</h3>
+        <p>Process videos and the will it roll? series, filmed in a real kitchen.</p>
+      </a>
+      <a class="tile" href="mediakit.html" style="--tile-accent:var(--kit)">
+        <div class="eyebrow">media kit</div>
+        <h3>work with me</h3>
+        <p>Audience stats, partnership options, and the full media kit to download.</p>
+      </a>
+    </section>
+  </main>
+
 </div>
 
-  <hr class="divider">
-
-  <div class="panel center">
-    <div class="chapter-label" style="color:var(--resume)">resume</div>
-    <h3>product management work</h3>
-    <p>Hardware accessories, firmware, cross-platform connectivity, and OEM partnerships at Microsoft.</p>
-    <div class="cta-row"><a class="btn" href="resume.html">view resume</a></div>
+<footer class="site-footer">
+  <div class="links">
+    <a href="mailto:carianjperez@gmail.com">email</a>
+    <a href="https://www.linkedin.com/in/CarianPerez" target="_blank" rel="noopener">linkedin</a>
+    <a href="https://www.tiktok.com/@carianperez" target="_blank" rel="noopener">tiktok</a>
+    <a href="https://instagram.com/creating.cari" target="_blank" rel="noopener">instagram</a>
+    <a href="https://instagram.com/eatrollcall" target="_blank" rel="noopener">roll call on instagram</a>
   </div>
-
-  <div class="panel center">
-    <div class="chapter-label" style="color:var(--bakery)">roll call</div>
-    <h3>cinnamon rolls, Tampa Bay</h3>
-    <p>Cream cheese icing, small batches, pickups and pop-ups around Riverview and the greater Tampa area.</p>
-    <div class="cta-row"><a class="btn" href="bakery.html">see roll call</a></div>
-  </div>
-
-  <div class="panel center">
-    <div class="chapter-label" style="color:var(--content)">content</div>
-    <h3>cooking and baking, on camera</h3>
-    <p>The process behind the rolls and the recipes I'm testing, documented as I go rather than staged after the fact.</p>
-    <div class="cta-row"><a class="btn" href="ugc.html">see the content</a></div>
-  </div>
-
-  <footer class="note">based in the Tampa Bay area, Florida</footer>
-</div>
+  <p>&copy; 2026 Carian Perez &middot; Tampa, FL</p>
+</footer>
 </body>
 </html>

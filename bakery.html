@@ -3,68 +3,107 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cari — Roll Call</title>
+<title>Roll Call | Carian Perez</title>
+<meta name="description" content="Roll Call is a small cinnamon roll bakery in Riverview, FL. Brown butter cinnamon rolls, $7 each, order online for Saturday pickup.">
+<meta property="og:title" content="Roll Call | Carian Perez">
+<meta property="og:description" content="Roll Call is a small cinnamon roll bakery in Riverview, FL. Brown butter cinnamon rolls, $7 each, order online for Saturday pickup.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://carianperez.github.io/images/rollcall-popup.jpg">
+<meta name="theme-color" content="#F6EBE7">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23F6EBE7'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' text-anchor='middle' fill='%237C5568'%3ECP%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-<style>:root{--accent:var(--bakery);}</style>
 </head>
-<body>
+<body class="theme-bakery">
+<a class="skip" href="#main">Skip to content</a>
 <div class="wrap">
 
-  <div class="mark">
-    <div class="name">Carian Perez</div>
+  <header class="mark">
+    <a class="name" href="index.html">Carian Perez</a>
     <div class="tagline">product manager &middot; baker &middot; creator</div>
-  </div>
+  </header>
 
-  <nav class="topnav">
+  <nav class="topnav" aria-label="Main">
     <a href="index.html">home</a>
     <a href="resume.html">resume</a>
-    <a href="bakery.html" class="active">roll call</a>
+    <a href="bakery.html" aria-current="page">roll call</a>
     <a href="ugc.html">content</a>
+    <a href="mediakit.html">media kit</a>
     <a href="contact.html">contact</a>
   </nav>
 
-  <div class="center" style="margin-bottom:2.5rem">
-    <div class="chapter-label" style="color:var(--bakery)">roll call</div>
-    <h1>cinnamon rolls, made in small batches around Tampa Bay</h1>
-    <p style="margin-left:auto;margin-right:auto">Roll Call started as a way to bring cinnamon rolls with real cream cheese icing to the neighborhood, not the shelf-stable kind. Every batch is baked to order, based in Riverview, with pickups and occasional pop-ups around the greater Tampa area.</p>
-    <a class="btn filled" href="https://instagram.com/eatrollcall" target="_blank">follow @eatrollcall</a>
-  </div>
+  <main id="main">
+    <section class="intro">
+      <img class="brand-logo" src="images/rollcall-logo.png" alt="Roll Call Bakery logo: a girl in an apron hugging a giant cinnamon roll" width="806" height="476">
+      <h1>brown butter cinnamon rolls, baked in Riverview</h1>
+      <p>Roll Call is a small cinnamon roll bakery run out of my home kitchen in Riverview, Florida. Rolls are baked in small batches, with pickup every Saturday and pop-ups around Tampa Bay.</p>
+      <div class="cta-row">
+        <a class="btn filled" href="https://roll-call-bakery.square.site/" target="_blank" rel="noopener">order now</a>
+        <a class="btn" href="https://instagram.com/eatrollcall" target="_blank" rel="noopener">follow @eatrollcall</a>
+      </div>
+    </section>
 
-  <hr class="divider">
+    <hr class="divider">
 
-  <h2 class="center">the rolls</h2>
-  <div class="grid-2">
-    <div class="photo-block">
-      <img src="images/bakery-1.jpg" alt="Cinnamon rolls from Roll Call">
-      <div class="photo-caption">classic cinnamon roll, cream cheese icing</div>
-    </div>
-    <div class="photo-block">
-      <img src="images/bakery-2.jpg" alt="Roll Call cinnamon rolls, close up">
-      <div class="photo-caption">[add a caption]</div>
-    </div>
-    <div class="photo-block">
-      <img src="images/bakery-3.jpg" alt="Roll Call pop-up setup">
-      <div class="photo-caption">[add a caption]</div>
-    </div>
-    <div class="photo-block">
-      <img src="images/bakery-4.jpg" alt="Roll Call packaging">
-      <div class="photo-caption">[add a caption]</div>
-    </div>
-  </div>
+    <section>
+      <h2 class="section-title">the lineup</h2>
+      <ul class="lineup">
+        <li><span class="item">classic</span><span class="desc">brown butter, cinnamon sugar, cream cheese icing</span><span class="price">$7</span></li>
+        <li><span class="item">cookies n cream</span><span class="desc">oreo filling in the same dough, with cream cheese icing</span><span class="price">$7</span></li>
+        <li><span class="item">pumpkin spice</span><span class="desc">seasonal, with warm spices and cream cheese icing</span><span class="price">$7</span></li>
+      </ul>
+      <p class="fine">Prices are per roll. Flavors rotate, and the order page shows what&rsquo;s available right now.</p>
+    </section>
 
-  <hr class="divider">
+    <section>
+      <hr class="divider">
+      <h2 class="section-title">from the kitchen</h2>
+      <div class="gallery">
+        <figure class="wide"><img src="images/rollcall-popup.jpg" alt="Cari smiling behind the Roll Call Bakery pop-up table, with boxed cinnamon rolls on both sides of a cake stand and the Roll Call banner on the front" width="1400" height="933" loading="lazy" decoding="async"></figure>
+        <figure><img src="images/rollcall-box.jpg" alt="A single cinnamon roll with cream cheese icing in a kraft box, with more boxed rolls behind it" width="900" height="1125" loading="lazy" decoding="async"></figure>
+        <figure><img src="images/rollcall-tray.jpg" alt="A pan of cinnamon rolls covered in cream cheese icing on parchment" width="900" height="1125" loading="lazy" decoding="async"></figure>
+        <figure class="wide"><img src="images/rollcall-holding.jpg" alt="Cari holding up a boxed cinnamon roll at the Roll Call Bakery table" width="1400" height="933" loading="lazy" decoding="async"></figure>
+      </div>
+    </section>
 
-  <h2 class="center">where to find them</h2>
-  <div class="panel">
-    <h3>pickup</h3>
-    <p style="margin-bottom:0">Riverview, FL. Order windows are announced ahead of each bake, [add how people should place an order: form, DM, group chat].</p>
-  </div>
-  <div class="panel">
-    <h3>pop-ups</h3>
-    <p style="margin-bottom:0">Occasional pop-ups around Tampa Bay. [Add your next confirmed date and location here, or a line about where to see upcoming ones.]</p>
-  </div>
+    <hr class="divider">
 
-  <footer class="note">swap the four images above for real photos of the same file names (bakery-1.jpg through bakery-4.jpg) in the images folder, and fill in the order and pop-up details</footer>
+    <section>
+      <h2 class="section-title">pickup and pop-ups</h2>
+      <div class="info-grid">
+        <div class="info">
+          <h3>pickup</h3>
+          <p>Every Saturday in Riverview. Order and pay online ahead of time. Pickup only for now, no shipping.</p>
+        </div>
+        <div class="info">
+          <h3>pop-ups</h3>
+          <p>Recurring pop-ups around Tampa Bay, including Headlines in Bloomingdale. Dates go up on Instagram first.</p>
+        </div>
+        <div class="info">
+          <h3>events and large orders</h3>
+          <p>Planning something? <a href="mailto:carianjperez@gmail.com">Email me</a> and we&rsquo;ll figure it out.</p>
+        </div>
+        <div class="info">
+          <h3>follow along</h3>
+          <p><a href="https://instagram.com/eatrollcall" target="_blank" rel="noopener">@eatrollcall</a> for drops, pop-up dates, and the occasional failed experiment.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
 </div>
+
+<footer class="site-footer">
+  <div class="links">
+    <a href="mailto:carianjperez@gmail.com">email</a>
+    <a href="https://www.linkedin.com/in/CarianPerez" target="_blank" rel="noopener">linkedin</a>
+    <a href="https://www.tiktok.com/@carianperez" target="_blank" rel="noopener">tiktok</a>
+    <a href="https://instagram.com/creating.cari" target="_blank" rel="noopener">instagram</a>
+    <a href="https://instagram.com/eatrollcall" target="_blank" rel="noopener">roll call on instagram</a>
+  </div>
+  <p>&copy; 2026 Carian Perez &middot; Tampa, FL</p>
+</footer>
 </body>
 </html>
