@@ -222,13 +222,13 @@ nav.topnav a[aria-current="page"] {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  gap: 2rem;
+  gap: 1.5rem;
   padding: 1.1rem 0;
   border-bottom: 1px solid var(--line);
 }
 .lineup li:first-child { border-top: 1px solid var(--line); }
-.lineup .item { font-family: 'Cormorant Garamond', serif; font-size: 1.55rem; line-height: 1.2; }
-.lineup .desc { color: var(--ink-soft); text-align: right; max-width: 34ch; font-size: 0.95rem; }
+.lineup .text { flex: 1; color: var(--ink-soft); }
+.lineup .item { font-family: 'Cormorant Garamond', serif; font-size: 1.55rem; font-weight: 500; color: var(--ink); line-height: 1.2; }
 
 .gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
 .gallery figure { margin: 0; }
@@ -265,8 +265,6 @@ nav.topnav a[aria-current="page"] {
   .hero-flex .hero-text p { margin-left: auto; margin-right: auto; }
   .hero-flex .hero-photo img { width: 100%; max-width: 320px; height: 360px; margin: 0 auto; }
   .tiles, .gallery, .info-grid { grid-template-columns: 1fr; }
-  .lineup li { flex-direction: column; gap: 0.3rem; }
-  .lineup .desc { text-align: left; }
 }
 
 .cta-row.left { justify-content: flex-start; }
@@ -279,16 +277,13 @@ nav.topnav a[aria-current="page"] {
 /* ---- v2 additions ---- */
 .brand-logo { display: block; width: min(250px, 68%); height: auto; margin: 0 auto 1.75rem; }
 
-.lineup li { align-items: baseline; }
-.lineup .item { flex: 1; }
 .lineup .price { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; color: var(--accent); min-width: 2.4rem; text-align: right; }
 
-.gallery .wide { grid-column: 1 / -1; }
-.gallery img { height: auto; }
+.gallery img { height: auto; aspect-ratio: 1 / 1; object-fit: cover; }
 
 .reels { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
 .reels figure { margin: 0; }
-.reels img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; display: block; border-radius: 4px; }
+.reels img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; display: block; border-radius: 4px; }
 .reels figcaption { font-size: 0.85rem; color: var(--ink-soft); margin-top: 0.6rem; text-align: center; }
 
 .subtitle { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1.4rem; color: var(--ink-soft); margin: -0.2rem 0 1rem; max-width: none; }
@@ -303,7 +298,6 @@ nav.topnav a[aria-current="page"] {
 .info-grid .info p { margin-bottom: 0.6em; }
 
 @media (max-width: 700px) {
-  .lineup .price { text-align: left; }
   .reels { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: 1rem; padding-bottom: 0.6rem; }
   .reels figure { flex: 0 0 68%; scroll-snap-align: start; }
   .stats { grid-template-columns: 1fr 1fr; }
