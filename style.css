@@ -307,3 +307,20 @@ nav.topnav a[aria-current="page"] {
 }
 
 .stats + .fine { margin-top: 1rem; }
+
+/* ---- work page ---- */
+.case-head { margin-bottom: 1.5rem; }
+.case-head h2 { margin: 0; }
+.case dl { display: grid; grid-template-columns: 9.5rem 1fr; gap: 1.4rem 1.75rem; margin: 0; }
+.case dt { font-size: 0.82rem; text-transform: lowercase; letter-spacing: 0.06em; color: var(--accent); font-weight: 500; padding-top: 0.35rem; }
+.case dd { margin: 0; }
+.case dd p { max-width: 60ch; }
+.case dd p:last-child { margin-bottom: 0; }
+.case dd.result p { color: var(--ink); font-size: 1.05rem; }
+.case-links { font-size: 0.95rem; margin: 1.75rem 0 0; }
+.shot { margin: 2rem 0 0; }
+.shot img { width: 100%; height: auto; display: block; border: 1px solid var(--line); border-radius: 4px; }
+@media (max-width: 700px) {
+  .case dl { grid-template-columns: 1fr; gap: 0.15rem; }
+  .case dd { margin-bottom: 1.2rem; }
+}
